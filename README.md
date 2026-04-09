@@ -88,9 +88,4 @@ A beautifully designed **interactive wall calendar** built with React, featuring
 
 ---
 
-##Feedback
-
-Feel free to suggest improvements or open issues!
-
----
 
