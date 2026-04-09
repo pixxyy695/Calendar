@@ -23,7 +23,7 @@ function NotesSection({ curYear, curMonth, monthName, theme, rangeStart, rangeEn
     if (rangeStart && activeTab !== "range") {
       setActiveTab("range");
     }
-  }, [rangeStart]);
+  }, [rangeStart,activeTab]);
 
   const saveMonthNote = () => {
     lsSet(monthNoteKey(curYear, curMonth), monthNote);

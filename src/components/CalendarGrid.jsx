@@ -90,7 +90,6 @@ export default function CalendarGrid({
           const inRange = isInRange(day);
 
           const isWeekend = idx % 7 === 0 || idx % 7 === 6;
-          const col = idx % 7;
           const isEndOnly = end && rangeStart && !isRangeStart(day);
 
           return (
