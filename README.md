@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Aesthetic Wall Calendar (React + Tailwind)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautifully designed **interactive wall calendar** built with React, featuring realistic UI elements like spiral binding, smooth page flips, range selection, and an elegant notes system.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+* **Monthly Calendar View**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * Clean grid layout with smooth navigation between months
+  * Responsive design (mobile + desktop)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Realistic Page Flip Animation**
 
-### `npm test`
+  * Smooth 3D flip transitions when switching months
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Spiral Binding UI**
 
-### `npm run build`
+  * Realistic top binding inspired by physical calendars
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Date Range Selection**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Click and drag to select date ranges
+  * Visual highlight with start/end markers
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Notes System**
 
-### `npm run eject`
+  * Month-wise notes
+  * Range-based notes (attach notes to selected dates)
+  * Persistent storage using localStorage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* 🎨 **Dynamic Themes**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * Each month has unique colors and images
+  * Soft aesthetic, paper-like UI
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* 🖼️ **Hero Section**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  * Beautiful monthly cover images
+  * Styled month badge with modern UI
 
-## Learn More
+* 📱 **Responsive Design**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  * Fully optimized for mobile and desktop screens
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🛠️ Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-**React** – Component-based UI
+-**Tailwind CSS** – Styling and layout
+-**JavaScript**
+-**LocalStorage API** – Data persistence
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+##How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Calendar days are dynamically generated based on month/year
+* Date range selection is handled via state (`rangeStart`, `rangeEnd`)
+* Notes are stored using `localStorage`:
 
-### Advanced Configuration
+  -Month notes → saved per month
+  -Range notes → saved with date labels
+   -Themes (colors + images) change per month automatically
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+##Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-Images from Unsplash
+-Fonts: DM Sans & Cormorant Garamond
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Feedback
+
+Feel free to suggest improvements or open issues!
+
+---
+
