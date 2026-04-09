@@ -45,9 +45,9 @@ A beautifully designed **interactive wall calendar** built with React, featuring
   * Fully optimized for mobile and desktop screens
 
 ---
-##ScreenShots
 
-## Screenshots
+
+##Screenshots
 
 
 ##Desktop View
