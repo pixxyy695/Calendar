@@ -4,7 +4,7 @@ A beautifully designed **interactive wall calendar** built with React, featuring
 
 ---
 
-## ✨ Features
+##Features
 
 * **Monthly Calendar View**
 
@@ -30,23 +30,36 @@ A beautifully designed **interactive wall calendar** built with React, featuring
   * Range-based notes (attach notes to selected dates)
   * Persistent storage using localStorage
 
-* 🎨 **Dynamic Themes**
+* **Dynamic Themes**
 
   * Each month has unique colors and images
   * Soft aesthetic, paper-like UI
 
-* 🖼️ **Hero Section**
+* **Hero Section**
 
   * Beautiful monthly cover images
   * Styled month badge with modern UI
 
-* 📱 **Responsive Design**
+* **Responsive Design**
 
   * Fully optimized for mobile and desktop screens
 
 ---
+##ScreenShots
 
-## 🛠️ Tech Stack
+## Screenshots
+
+
+##Desktop View
+![Desktop View](assets/Screenshot%20(110).png)
+
+##Notes
+![Notes](assets/Screenshot%20(111).png)
+
+##Mobile View
+![Mobile View](assets/Screenshot%20(113).png)
+---
+##Tech Stack
 
 -**React** – Component-based UI
 -**Tailwind CSS** – Styling and layout
