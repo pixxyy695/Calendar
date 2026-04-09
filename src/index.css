@@ -1,13 +1,74 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+
+html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #c8bfae;
+}
+
+/* Page flip animation */
+@keyframes flipIn {
+  0% {
+    transform: perspective(1200px) rotateX(-12deg) scale(0.95);
+    opacity: 0.4;
+  }
+  100% {
+    transform: perspective(1200px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flipOut {
+  0% {
+    transform: perspective(1200px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(1200px) rotateX(12deg) scale(0.95);
+    opacity: 0.4;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Smooth date hover transitions */
+.calendar-day:hover {
+  transform: scale(1.08);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(180,160,130,0.4);
+  border-radius: 4px;
+}
+
+/* Input focus */
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100,140,180,0.25), inset 0 1px 3px rgba(0,0,0,0.05) !important;
+  border-color: rgba(100,140,180,0.4) !important;
 }
